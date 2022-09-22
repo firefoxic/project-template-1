@@ -1,4 +1,8 @@
 {
+	"files.exclude": {
+		"*:Zone.Identifier": true,
+		"node_modules/": true
+	},
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true
@@ -10,11 +14,12 @@
 	"editor.renderWhitespace": "selection",
 	"editor.wordWrap": "on",
 
-	"files.insertFinalNewline": true,
 	"files.autoSave": "onFocusChange",
+	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
 
+	"html.format.indentInnerHtml": true,
 	"html.format.indentHandlebars": true,
 	"html.format.maxPreserveNewLines": 1,
 	"html.format.wrapLineLength": 0,
