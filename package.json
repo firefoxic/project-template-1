@@ -30,8 +30,10 @@
 		"not < 0.25%"
 	],
 	"editorconfig-cli": [
-		"./*.{json,js,html,css,svg}",
-		"!./**/*.min.css"
+		"*.*",
+		"icons/**",
+		"images/**",
+		"styles/**"
 	],
 	"engines": {
 		"node": "16.x"
