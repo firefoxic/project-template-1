@@ -18,9 +18,9 @@
 		"stylelint": "^14.13.0"
 	},
 	"scripts": {
-		"lint": "editorconfig-cli && stylelint \"styles/style.css\" && gulp validateMarkup --silent",
+		"lint": "editorconfig-cli && stylelint \"styles/styles.css\" && gulp validateMarkup --silent",
 		"build": "gulp compileProject",
-		"start": "gulp"
+		"start": "gulp runDev"
 	},
 	"browserslist": [
 		"last 2 versions",
@@ -29,10 +29,11 @@
 		"not < 0.25%"
 	],
 	"editorconfig-cli": [
-		"*.*",
-		"icons/**",
-		"images/**",
-		"styles/**"
+		"*.{json,js,html,css,svg,webmanifest}",
+		"icons/**/*.svg",
+		"images/**/*.svg",
+		"styles/**/*.css",
+		"scritps/**/*.js"
 	],
 	"engines": {
 		"node": "16.x"
