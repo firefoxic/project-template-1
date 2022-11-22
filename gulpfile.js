@@ -5,6 +5,7 @@ import autoprefixer from "autoprefixer";
 import csso from "postcss-csso";
 import rename from "gulp-rename";
 import { stacksvg } from "gulp-stacksvg";
+import svgo from "gulp-svgmin";
 import { htmlValidator } from "gulp-w3c-html-validator";
 import browser from "browser-sync";
 
@@ -28,6 +29,7 @@ export function processStyles () {
 
 export function createStack () {
 	return src(["./icons/**/*.svg", "!./icons/stack.svg"])
+		.pipe(svgo())
 		.pipe(stacksvg())
 		.pipe(dest("./icons"));
 }
